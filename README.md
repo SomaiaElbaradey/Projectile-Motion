@@ -1,5 +1,5 @@
 # Projectile-Motion
-
+Simple interactive simulation that represents the "Projectile Motion" as an educational experiment.
 
 ## Getting Started
 
