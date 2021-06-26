@@ -29,6 +29,9 @@ window.onload = function () {
       text: "Trajectory",
       fontColor: "#ffff",
     },
+    toolTip:{
+      content:"x: {x}, y: {y}" ,
+    },
     animationEnabled: true,
     data: [
       {
