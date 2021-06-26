@@ -1,88 +1,207 @@
-.w-50{
-    width:50%;
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* header */
+header {
+  background: url("./pic/01.png ");
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 85% 85% / 30%;
+}
+
+header .overlay {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient(
+    135deg,
+    #151515a1 10%,
+    #301b3fb0 90%,
+    #3c415ca9 100%
+  );
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+/* controller */
+button {
+  display: block;
+  width: 90%;
+  font-size: 23px;
+  border: none;
+  padding: 9px;
+  cursor: pointer;
+  outline: inherit;
+  font-weight: 600;
+}
+
+.launch-btn {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  margin-top: 5rem;
+  color: white;
+  background-color: #301b3f;
+}
+
+.reset-btn {
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  background-color: #d1d1d1;
+  margin-bottom: 1rem;
+}
+
+label,
+output {
+  color: #dddddd;
+}
+
+input[type="range"] {
+  width: 70%;
+  -webkit-appearance: none;
+  margin: 10px 0;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000;
+  background: #3071a9;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -11px;
+}
+
+/* .w-50 {
+    width: 50%;
     display: block;
+  }
+  
+.pointDisplay {
+  display: none;
 }
 
-.pointDisplay{
-    display: none;
+.startDisplay {
+  display: none;
+}
+.scoreDisplay {
+  display: none;
 }
 
-.startDisplay{
-    display: none;
-    
-}
-.scoreDisplay{
-    display: none;
-}
-
-.firstDiv{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+.firstDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .firstDiv > * {
-    margin: 10px;
+  margin: 10px;
 }
 
-#playersList{
-    display: none;
-    width: 100%;
-    max-height: 400px;
-    overflow-y: scroll;
-   
+#playersList {
+  display: none;
+  width: 100%;
+  max-height: 400px;
+  overflow-y: scroll;
 }
 
-#playersList > *{
-    display: block;
-    width:50% ;
-    margin: auto;
-    margin-bottom: 10px;
+#playersList > * {
+  display: block;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+} */
 
+body {
+  background: black;
 }
-
-body{
-    margin: 0;
-    background: black;
+/* .hide {
+  display: none;
 }
-.hide{
-    display: none;
-}
-.leading-none{
-    padding-bottom: 30px;
-}
-.btn-stop{
-    width: 100px;
-    background-color: coral;
-    margin-left:10px;
-    padding:5px 10px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-#music, #sound{
-    color: wheat;
-    display: inline-block;
-    padding: 10px;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
+.leading-none {
+  padding-bottom: 30px;
 }
 
-.btn-stop:hover{
-    background-color: rgb(253, 89, 29);
+.btn-stop {
+  width: 100px;
+  background-color: coral;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-#avatar{
-    display: inline;
-    position: absolute;
-    right:50px;
-    font-size: 25px;
-    font-weight: bold;  
-    color:white;
-    z-index: 9;
-    user-select: none;
+#music,
+#sound {
+  color: wheat;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
 
+.btn-stop:hover {
+  background-color: rgb(253, 89, 29);
+}
+
+#avatar {
+  display: inline;
+  position: absolute;
+  right: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  z-index: 9;
+  user-select: none;
+} */
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 1rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #727272;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 80%;
 }

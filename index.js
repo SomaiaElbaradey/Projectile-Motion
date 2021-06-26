@@ -3,8 +3,13 @@ let initialVelocity = 50;
 let angle = 30; // in degrees;
 const gravity = 9.8;
 
+let angle = document.getElementById("angle");
+let velocity = document.getElementById("velocity");
+
 let timeInSeconds = 0;
 let intervalId = null;
+
+JSC.Chart('chartDiv', {});
 
 let initialYVelocity = function (initialV = initialVelocity, theta = angle) {
   return initialV * Math.sin(toRadians(theta));
@@ -31,6 +36,11 @@ let yDisplacement = function (time = timeInSeconds) {
   );
 };
 
+// angle.addEventListener("input", function (event) {
+//     document.getElementById("angleVal").nodeValue = event.value
+//   });
+
+
 function startProjectile() {
   //Reset any previous movement.
   resetTimer();
@@ -40,6 +50,18 @@ function startProjectile() {
 }
 
 function startMovement() {
+//   var c = document.getElementById("myCanvas");
+//   var ctx = c.getContext("2d");
+
+//   // Create gradient
+//   var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+//   grd.addColorStop(0, "red");
+//   grd.addColorStop(1, "white");
+
+//   // Fill with gradient
+//   ctx.fillStyle = grd;
+//   ctx.fillRect(10, 10, 150, 80);
+
   if (timeInSeconds > timeOfFlight()) {
     let flightTime = timeOfFlight();
     console.log(

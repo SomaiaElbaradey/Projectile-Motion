@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link href="index.css" rel="stylesheet">
-</head>
-<body>
-    <button id="startBtn"> fr </button>
-    <div class="fixed text-white text-sm ml-2 mt-1 select-none scoreDisplay">
-        <span>High Score: </span>
-        <span id="scoreEl">0</span>
-        <button class="btn-stop">pause</button>
-        <span id="music"><i class="fas fa-music"></i></span>
-        <span id="sound"><i class="fas fa-volume-up"></i></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projectile Motion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet" />
+
+  <body>
+    <header>
+    <div class="overlay">
+        <h1>Projectile Motion</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum quis</p>
     </div>
-    <script src="index.js"></script>
-</body>
+    </header>
+    <div class="container row">
+        <div class="col-md-9 btn" id="myCanvas" width="200" height="100">
+            <div id="chartDiv" style="width:100%; height:300px; margin:0 auto;"></div>
+        </div>
+        <div class="col text-center">
+            <button class="launch-btn">Launch</button>
+            <button class="reset-btn">Reset</button>
+            <label for="velocity">Initial Velocity (m/s):</label><br>
+            <input type="range" id="velocity" name="velocity" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
+            <output>50</output>
+            <label for="angle">Initial Angle (°):</label><br>
+            <input type="range" id="angle" name="angle" min="0" max="90" oninput="this.nextElementSibling.value = this.value">
+            <output>45</output>
+        </div>
+    </div>
+    <button id="startBtn">fr</button>
+  </body>
+  <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
+  <script src="index.js"></script>
 </html>
