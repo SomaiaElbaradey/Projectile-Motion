@@ -10,7 +10,7 @@ body {
 
 /* header */
 header {
-  background: url("./pic/01.png ");
+  background: url("./pic/01.jpg");
   text-align: center;
   width: 100%;
   height: auto;
@@ -45,15 +45,14 @@ p {
 }
 
 /* controller */
-.controller{
-    margin-left: 5rem;
-  margin-top: 3rem;
-
+.controller {
+  margin-left: 5rem;
+  margin-top: 7rem;
 }
 
 button {
   display: block;
-  width: 90%;
+  width: 100%;
   font-size: 23px;
   border: none;
   padding: 9px;
@@ -62,11 +61,15 @@ button {
   font-weight: 600;
 }
 
+button:hover {
+  opacity: 0.8;
+}
+
 .launch-btn {
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   color: white;
-  background-color: #301b3f;
+  background-color: #3071a9;
 }
 
 .reset-btn {
@@ -107,7 +110,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .chart {
-  margin-top: 3rem;
+    margin-left: 1rem;
+  margin-top: 4rem;
   padding-right: 10px;
 }
-

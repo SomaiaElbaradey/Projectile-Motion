@@ -14,7 +14,7 @@ const gravity = 9.8;
 //initialize the chart
 window.onload = function () {
   chart = new CanvasJS.Chart("motionChart", {
-    backgroundColor: "#00000",
+    backgroundColor: "#0000",
     axisX: {
       title: "X Axis",
       titleFontColor: "#ffff",
