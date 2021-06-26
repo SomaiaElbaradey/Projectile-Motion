@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+body {
+  background: black;
+}
 
 /* header */
 header {
@@ -42,6 +45,12 @@ p {
 }
 
 /* controller */
+.controller{
+    margin-left: 5rem;
+  margin-top: 3rem;
+
+}
+
 button {
   display: block;
   width: 90%;
@@ -56,7 +65,6 @@ button {
 .launch-btn {
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-  margin-top: 5rem;
   color: white;
   background-color: #301b3f;
 }
@@ -73,6 +81,7 @@ output {
   color: #dddddd;
 }
 
+/* range style */
 input[type="range"] {
   width: 70%;
   -webkit-appearance: none;
@@ -97,111 +106,8 @@ input[type="range"]::-webkit-slider-thumb {
   margin-top: -11px;
 }
 
-/* .w-50 {
-    width: 50%;
-    display: block;
-  }
-  
-.pointDisplay {
-  display: none;
+.chart {
+  margin-top: 3rem;
+  padding-right: 10px;
 }
 
-.startDisplay {
-  display: none;
-}
-.scoreDisplay {
-  display: none;
-}
-
-.firstDiv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.firstDiv > * {
-  margin: 10px;
-}
-
-#playersList {
-  display: none;
-  width: 100%;
-  max-height: 400px;
-  overflow-y: scroll;
-}
-
-#playersList > * {
-  display: block;
-  width: 50%;
-  margin: auto;
-  margin-bottom: 10px;
-} */
-
-body {
-  background: black;
-}
-/* .hide {
-  display: none;
-}
-.leading-none {
-  padding-bottom: 30px;
-}
-
-.btn-stop {
-  width: 100px;
-  background-color: coral;
-  margin-left: 10px;
-  padding: 5px 10px;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-#music,
-#sound {
-  color: wheat;
-  display: inline-block;
-  padding: 10px;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.btn-stop:hover {
-  background-color: rgb(253, 89, 29);
-}
-
-#avatar {
-  display: inline;
-  position: absolute;
-  right: 50px;
-  font-size: 25px;
-  font-weight: bold;
-  color: white;
-  z-index: 9;
-  user-select: none;
-} */
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 1rem;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #727272;
-  margin: auto;
-  padding: 10px;
-  border: 1px solid #888;
-  width: 80%;
-}
